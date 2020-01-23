@@ -30,6 +30,7 @@ RUN apt-get update && apt-get install -y \
   libpulse0 \
   libv4l-0 \
   fonts-symbola \
+  default-jre \
   --no-install-recommends \
   && curl -sSL https://dl.google.com/linux/linux_signing_key.pub | apt-key add - \
   && echo "deb [arch=amd64] https://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google.list \
