@@ -38,8 +38,8 @@ RUN apt-get update && apt-get install -y \
   xvfb google-chrome-stable \
   && apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
-ADD xvfb.sh /etc/init.d/xvfb
-ADD entrypoint.sh /entrypoint.sh
+ADD angular-cli/base/xvfb.sh /etc/init.d/xvfb
+ADD angular-cli/base/entrypoint.sh /entrypoint.sh
 
 RUN chmod +x /etc/init.d/xvfb \
   && chmod +x /entrypoint.sh
